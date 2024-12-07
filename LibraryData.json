@@ -1,0 +1,62 @@
+{
+    "Books": [
+        {
+            "Id": 1,
+            "Title": "The Great Gatsby",
+            "Author": "F. Scott Fitzgerald",
+            "Genre": "Classic",
+            "PublishYear": 1925,
+            "Isbn": 456,
+            "Review": [ 5, 4, 5, 4, 5 ]
+        },
+        {
+            "Id": 2,
+            "Title": "The Catcher in the Rye",
+            "Author": "J.D. Salinger",
+            "Genre": "Fiction",
+            "PublishYear": 1951,
+            "Isbn": 789,
+            "Review": [ 4, 4, 3, 4, 4 ]
+        },
+        {
+            "Id": 3,
+            "Title": "The Road",
+            "Author": "Cormac McCarthy",
+            "Genre": "Post-Apocalyptic",
+            "PublishYear": 2006,
+            "Isbn": 321,
+            "Review": [ 5, 4, 4, 5, 4 ]
+        },
+        {
+            "Id": 4,
+            "Title": "Pride and Prejudice",
+            "Author": "Jane Austen",
+            "Genre": "Classic",
+            "PublishYear": 1813,
+            "Isbn": 654,
+            "Review": [ 5, 5, 5, 4, 5 ]
+        }
+    ],
+    "Authors": [
+        {
+            "Id": 1,
+            "Name": "F. Scott Fitzgerald",
+            "Country": "United States"
+        },
+        {
+            "Id": 2,
+            "Name": "J.D. Salinger",
+            "Country": "United States"
+        },
+        {
+            "Id": 3,
+            "Name": "Cormac McCarthy",
+            "Country": "United States"
+        },
+        {
+            "Id": 4,
+            "Name": "Jane Austen",
+            "Country": "United Kingdom"
+        }
+    ]
+}
