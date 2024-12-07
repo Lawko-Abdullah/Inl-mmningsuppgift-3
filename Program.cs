@@ -64,11 +64,9 @@ namespace LibraryManagementAdvanced
                         Console.WriteLine("Ogiltigt val, vänligen försök igen.");
                         break;
                 }
-
                 Console.WriteLine();
             } while (choice != 9);
         }
-
         static void AddBook(Library library)
         {
             Console.Write("Ange boktitel: ");
@@ -93,12 +91,10 @@ namespace LibraryManagementAdvanced
                 Console.WriteLine("Ogiltigt ISBN.");
                 return;
             }
-
             Book newBook = new Book(title, author, genre, year, isbn);
             library.AddBook(newBook);
             Console.WriteLine("Bok tillagd framgångsrikt.");
         }
-
         static void AddAuthor(Library library)
         {
             Console.Write("Ange författar-ID: ");
@@ -117,7 +113,6 @@ namespace LibraryManagementAdvanced
             library.AddAuthor(newAuthor);
             Console.WriteLine("Författare tillagd framgångsrikt.");
         }
-
         static void UpdateBookDetails(Library library)
         {
             Console.Write("Ange bok-ID för att uppdatera: ");
@@ -126,16 +121,12 @@ namespace LibraryManagementAdvanced
                 Console.WriteLine("Ogiltigt ID.");
                 return;
             }
-
             Console.Write("Ange ny titel: ");
             string newTitle = Console.ReadLine();
-
             Console.Write("Ange ny författare: ");
             string newAuthor = Console.ReadLine();
-
             Console.Write("Ange ny genre: ");
             string newGenre = Console.ReadLine();
-
             Console.Write("Ange nytt publiceringsår: ");
             if (!int.TryParse(Console.ReadLine(), out int newYear))
             {
@@ -165,10 +156,8 @@ namespace LibraryManagementAdvanced
 
             Console.Write("Ange nytt namn för författaren: ");
             string newName = Console.ReadLine();
-
             Console.Write("Ange nytt land: ");
             string newCountry = Console.ReadLine();
-
             library.UpdateAuthor(id, newName, newCountry);
             Console.WriteLine("Författardetaljer uppdaterade framgångsrikt.");
         }
